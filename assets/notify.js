@@ -195,8 +195,9 @@
         }).then(
             response => response.json()
         ).then((html) => {
-            window.location.href = './thankyou.html';
+            window.location.href = './thankyou.html?fb_pixel_id=';
         });
+
         // return form.submit();
     }
 
