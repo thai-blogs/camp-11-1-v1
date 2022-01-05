@@ -195,9 +195,9 @@
         }).then(
             response => response.json()
         ).then((html) => {
-            window.location.href = './thankyou.html';
+            window.location.href = './thankyou.html?fb_pixel_id=552847195984078,155303900116276';
         });
-        
+
         // return form.submit();
     }
 
