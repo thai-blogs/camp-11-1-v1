@@ -9,7 +9,7 @@ function outputDat(m, fullM) {
 
 $(document).ready(function(){
     start_timer();
-    var time = 540;
+    var time = 1080;
     var intr;
     function start_timer() {
         intr = setInterval(tick, 1000);
@@ -23,9 +23,10 @@ $(document).ready(function(){
         if( mins == 0 && secs == 0 ) {
             clearInterval(intr);
         }
+        mins = mins >= 10 ? mins : "0"+mins;
         secs = secs >= 10 ? secs : "0"+secs;
-        $("#min").html("0"+mins);
-        $("#sec").html(secs);
+        $("#h_min").html(mins);
+        $("#h_sec").html(secs);
     }
     //
     // $('.toform').click(function () {
